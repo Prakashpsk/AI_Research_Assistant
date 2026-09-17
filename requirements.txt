@@ -1,0 +1,26 @@
+# ── Core Document Parsing ──────────────────────────────────────────────────────
+pymupdf>=1.24.0              # PDF/TXT/MD parsing (PyMuPDF / fitz)
+
+# ── Embeddings & Vector Store ──────────────────────────────────────────────────
+sentence-transformers>=2.7.0  # BGE-small-en-v1.5 embeddings
+torchvision                   # Required by sentence-transformers/torch
+chromadb>=0.5.0               # Vector database with persistence
+
+# ── Sparse Retrieval ───────────────────────────────────────────────────────────
+rank_bm25>=0.2.2              # BM25 keyword search
+
+# ── Reranking ─────────────────────────────────────────────────────────────────
+# cross-encoder via sentence-transformers (already listed above)
+
+# ── LLM (Gemini) ──────────────────────────────────────────────────────────────
+google-genai>=2.3.0           # Official Google Gemini SDK (new API)
+
+# ── UI ────────────────────────────────────────────────────────────────────────
+streamlit>=1.35.0
+
+# ── Utilities ─────────────────────────────────────────────────────────────────
+python-dotenv>=1.0.0          # Load .env variables
+Pillow>=10.0.0                # Image handling
+numpy>=1.26.0
+tqdm>=4.66.0
+tiktoken>=0.7.0               # Token counting

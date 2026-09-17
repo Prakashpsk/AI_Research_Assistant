@@ -216,3 +216,11 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Environment Variables
+.env
+.env.*
+!.env.example
+
+# App Data (Vector DB, indexes, etc)
+data/
